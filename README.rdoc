@@ -1,4 +1,5 @@
 == README
+Proyecto para mostrar el manejo de autenticacion, sesiones y upload de archivos
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
