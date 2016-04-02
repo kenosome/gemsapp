@@ -16,6 +16,8 @@ gem 'coffee-rails', '~> 4.1.0'
 
 # Administracion de autenticacion
 gem 'devise'
+# Gema para tratamiento de archivos
+gem 'carrierwave'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
