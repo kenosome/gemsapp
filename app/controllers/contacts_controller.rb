@@ -11,6 +11,15 @@ class ContactsController < ApplicationController
   # GET /contacts/1
   # GET /contacts/1.json
   def show
+    respond_to do |format|
+      format.html {}
+      format.pdf do
+        puts 'contacto'
+        puts @contact
+        archivo_pdf= ContactsPdf.new(@contact)
+        send_data archivo_pdf.render, filename: "#{@contact.name}.pdf", content_type: "application/pdf" and return
+      end
+    end
   end
 
   # GET /contacts/new
