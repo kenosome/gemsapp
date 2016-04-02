@@ -17,7 +17,8 @@
 
 <p>
   <strong>Avatar:</strong>
-  <%= @contact.avatar %>
+  <br>
+  <%=image_tag @contact.avatar %>
 </p>
 
 <%= link_to 'Edit', edit_contact_path(@contact) %> |
